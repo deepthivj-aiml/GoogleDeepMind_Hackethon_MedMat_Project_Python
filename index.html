@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedMat 3D Pro | AI Medical Engineering</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --medical-cyan: #00f2ff;
+            --medical-blue: #0ea5e9;
+            --medical-slate: #0f172a;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            /* Professional Engineering Studio Background */
+            background-color: #f8fafc;
+            background-image: 
+                radial-gradient(circle at 50% 50%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+                linear-gradient(#e2e8f0 1px, transparent 1px), 
+                linear-gradient(90deg, #e2e8f0 1px, transparent 1px);
+            background-size: 100% 100%, 40px 40px, 40px 40px;
+            background-attachment: fixed;
+            color: var(--medical-slate);
+        }
+        .mono { font-family: 'Roboto Mono', monospace; }
+        .glass {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+        }
+        .medical-glow {
+            box-shadow: 0 0 30px rgba(14, 165, 233, 0.15);
+        }
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+
+        @media print {
+            body { background-color: white !important; padding: 0 !important; margin: 0 !important; background-image: none !important; }
+            header, footer, .glass, button, .pointer-events-none, .xl\:col-span-5 > div:not(#sdc-content), .xl\:col-span-7 { display: none !important; }
+            main { padding: 0 !important; margin: 0 !important; display: block !important; }
+            .grid { display: block !important; }
+            #sdc-content { display: block !important; position: static !important; width: 100% !important; border: none !important; box-shadow: none !important; }
+            .xl\:col-span-5 { width: 100% !important; max-width: 100% !important; }
+            #sdc-content h1 { font-size: 24pt !important; }
+            #sdc-content p, #sdc-content div { font-size: 11pt !important; }
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.39.0",
+    "three": "https://esm.sh/three@0.170.0",
+    "three/examples/jsm/controls/OrbitControls": "https://esm.sh/three@0.170.0/examples/jsm/controls/OrbitControls",
+    "three/": "https://esm.sh/three@0.170.0/"
+  }
+}
+</script>
+</head>
+<body class="antialiased overflow-x-hidden">
+    <div id="root"></div>
+</body>
+</html>
