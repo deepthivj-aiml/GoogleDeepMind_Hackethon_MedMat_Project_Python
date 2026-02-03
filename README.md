@@ -39,15 +39,25 @@ X-Ray Mode: Transparent rendering to visualize internal lumens and tendon channe
 To eliminate AI hallucinations in clinical contexts, the system employs Retrieval-Augmented Generation (RAG):
 Google Search Grounding: Every material selection is verified against live FDA, ISO, and global supplier databases.
 Source Verification: Provides an audit trail of URLs used to justify biocompatibility and toxicity status.
+
 🚀 Key Features
+
 Clinical Synthesis Engine: Type a device name, and the system generates a full mechanical architecture, simulation targets, and material matrix.
+
 Regulatory Export Suite:
+
 Technical Dossier: Comprehensive engineering rationale and specs (ISO 13485 ready).
+
 SDS Bundle: 16-section GHS-compliant safety sheets for all components.
+
 Executive Summary: High-level performance snapshot for clinical stakeholders.
+
 Interactive Bio-Core: A 3D hero lattice utilizing mouse-tracking physics to symbolize the intersection of biology and engineering.
+
 Telemetry HUD: Real-time monitoring of Outer Diameter (OD), Wall Thickness, and Safety Factors.
+
 🛠 Tech Stack
+
 Layer	Technology
 Framework	React 19 (Modern ESM)
 AI SDK	@google/genai
@@ -55,12 +65,16 @@ AI SDK	@google/genai
 Styling	Tailwind CSS
 Icons/UI	Custom Clinical Design System
 Grounding	Google Search Tool integration
+
 📋 Regulatory Compliance & Use Cases
+
 This application is designed to support the following professional workflows:
 FDA 510(k) / MDR 2017/745 Submissions: Rapid generation of technical files for pre-clinical documentation.
 ISO 10993 Screening: Automated verification of material biocompatibility for blood and tissue contact.
 Manufacturing EHS: Automated authoring of safety data for hazardous material handling.
+
 🔧 Getting Started
+
 Prerequisites
 A valid Google Gemini API Key (Injected via environment variables).
 Browser with WebGL 2.0 support.
@@ -68,6 +82,7 @@ Installation
 Clone the repository.
 Ensure your process.env.API_KEY is configured.
 Open index.html via a local development server (e.g., Vite or Live Server).
+
 📄 License & Disclaimer
 License: MIT
 Medical Disclaimer: MedMat 3D Pro is an engineering assistant tool. All AI-generated outputs MUST be reviewed and signed off by a certified Professional Engineer (PE) or Regulatory Affairs specialist before manufacturing or clinical use.
